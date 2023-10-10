@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "JSON formatter",
+    "version": "1.0",
+    "description": "View and edit JSON web pages in good formats",
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "matches": ["https://*/*", "http://*/*"],
+          "run_at": "document_end"
+        }
+      ],
+    "permissions": ["activeTab"]
+} 
